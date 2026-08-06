@@ -320,6 +320,42 @@ document.querySelectorAll("[data-count]").forEach((el) => counterObserver.observ
 /* ---------- Footer year ---------- */
 document.getElementById("year").textContent = new Date().getFullYear();
 
+/* ---------- Notification permission ---------- */
+const notifyBtn = document.getElementById("notifyBtn");
+const notifyMsg = document.getElementById("notifyMsg");
+
+function showNotifyMsg(text, type) {
+  notifyMsg.textContent = text;
+  notifyMsg.className = "cs-notify-msg show " + type;
+}
+
+notifyBtn.addEventListener("click", () => {
+  if (!("Notification" in window)) {
+    showNotifyMsg("Browserul tău nu suportă notificările.", "error");
+    return;
+  }
+
+  if (Notification.permission === "granted") {
+    showNotifyMsg("Ești deja pe listă! Primul vlog vine curând!", "info");
+    return;
+  }
+
+  const handleResult = (permission) => {
+    if (permission === "granted") {
+      showNotifyMsg("Perfect! Te anunțăm când publicăm primul VideoVlog! 🎬", "success");
+    } else {
+      showNotifyMsg("Ești deja pe listă! Primul vlog vine curând!", "info");
+    }
+  };
+
+  const result = Notification.requestPermission();
+  if (result && typeof result.then === "function") {
+    result.then(handleResult);
+  } else {
+    Notification.requestPermission(handleResult);
+  }
+});
+
 /* ---------- Init ---------- */
 (function init() {
   let saved = null;
