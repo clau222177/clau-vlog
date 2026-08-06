@@ -19,7 +19,9 @@ const TRANSLATIONS = {
     stat_views: "Vizualizări",
     stat_videos: "Videoclipuri",
     vlogs_title: "Ultimele Vloguri",
-    vlogs_sub: "Cele mai recente aventuri de pe canal",
+    vlogs_sub: "Primul vlog e în pregătire — abonează-te ca să nu-l ratezi",
+    coming_soon: "În curând",
+    coming_soon_sub: "Primul vlog o să fie publicat — Abonează-te!",
     vlog_1_title: "O zi în Palermo 🌞",
     vlog_2_title: "Cea mai bună pizza 🍕",
     vlog_3_title: "Piața Ballarò 🛒",
@@ -63,7 +65,9 @@ const TRANSLATIONS = {
     stat_views: "Views",
     stat_videos: "Videos",
     vlogs_title: "Latest Vlogs",
-    vlogs_sub: "The most recent adventures from the channel",
+    vlogs_sub: "The first vlog is in the works — subscribe so you don't miss it",
+    coming_soon: "Coming Soon",
+    coming_soon_sub: "The first vlog will be published soon — Subscribe!",
     vlog_1_title: "A day in Palermo 🌞",
     vlog_2_title: "The best pizza 🍕",
     vlog_3_title: "Ballarò Market 🛒",
@@ -107,7 +111,9 @@ const TRANSLATIONS = {
     stat_views: "Vues",
     stat_videos: "Vidéos",
     vlogs_title: "Derniers Vlogs",
-    vlogs_sub: "Les aventures les plus récentes de la chaîne",
+    vlogs_sub: "Le premier vlog est en préparation — abonnez-vous pour ne pas le manquer",
+    coming_soon: "Bientôt",
+    coming_soon_sub: "Le premier vlog sera bientôt publié — Abonnez-vous !",
     vlog_1_title: "Une journée à Palerme 🌞",
     vlog_2_title: "La meilleure pizza 🍕",
     vlog_3_title: "Marché Ballarò 🛒",
@@ -151,7 +157,9 @@ const TRANSLATIONS = {
     stat_views: "Aufrufe",
     stat_videos: "Videos",
     vlogs_title: "Neueste Vlogs",
-    vlogs_sub: "Die neuesten Abenteuer vom Kanal",
+    vlogs_sub: "Der erste Vlog ist in Arbeit — abonniere, damit du ihn nicht verpasst",
+    coming_soon: "Bald",
+    coming_soon_sub: "Der erste Vlog wird bald veröffentlicht — Abonniere!",
     vlog_1_title: "Ein Tag in Palermo 🌞",
     vlog_2_title: "Die beste Pizza 🍕",
     vlog_3_title: "Markt Ballarò 🛒",
@@ -276,7 +284,7 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.12 }
 );
 
-document.querySelectorAll(".vlog-card, .about-grid, .social-card, .section-head").forEach((el, i) => {
+document.querySelectorAll(".vlog-card, .coming-soon, .about-grid, .social-card, .section-head").forEach((el, i) => {
   el.classList.add("reveal");
   el.style.transitionDelay = (i % 3) * 0.1 + "s";
   revealObserver.observe(el);
