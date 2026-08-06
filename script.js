@@ -1,5 +1,5 @@
 /* ============================================
-   Clau Vlog — site scripts
+   ClauDiretta — site scripts
    ============================================ */
 
 const TRANSLATIONS = {
@@ -39,7 +39,7 @@ const TRANSLATIONS = {
     about_p1:
       "M-am mutat din România în Palermo, Sicilia, pentru a-mi construi o viață nouă. De atunci, povestesc totul pe canalul meu de YouTube: de la prima zi în Italia, la cele mai bune pizza din oraș și plajele cu apă turcoaz.",
     about_p2:
-      "Pe „Clau Vlog\" vei găsi vloguri zilnice despre viața unui român în Italia, gătit, travel și întâlniri cu oameni interesanți. Dacă îți place ce vezi, dă un like, comentează și abonează-te — fiecare abonat contează enorm pentru mine!",
+      "Pe „ClauDiretta\" vei găsi vloguri zilnice despre viața unui român în Italia, gătit, travel și întâlniri cu oameni interesanți. Dacă îți place ce vezi, dă un like, comentează și abonează-te — fiecare abonat contează enorm pentru mine!",
     fact_1: "🇷🇴 Din România",
     fact_2: "🍕 Iubitor de pizza",
     fact_3: "🎥 Vloguri zilnice",
@@ -85,7 +85,7 @@ const TRANSLATIONS = {
     about_p1:
       "I moved from Romania to Palermo, Sicily, to build a new life. Since then, I document everything on my YouTube channel: from my first day in Italy to the best pizzas in town and turquoise-water beaches.",
     about_p2:
-      "On \"Clau Vlog\" you'll find daily vlogs about the life of a Romanian in Italy, cooking, travel and meeting interesting people. If you like what you see, hit like, comment and subscribe — every subscriber means the world to me!",
+      "On \"ClauDiretta\" you'll find daily vlogs about the life of a Romanian in Italy, cooking, travel and meeting interesting people. If you like what you see, hit like, comment and subscribe — every subscriber means the world to me!",
     fact_1: "🇷🇴 From Romania",
     fact_2: "🍕 Pizza lover",
     fact_3: "🎥 Daily vlogs",
@@ -131,7 +131,7 @@ const TRANSLATIONS = {
     about_p1:
       "J'ai déménagé de Roumanie à Palerme, en Sicile, pour me construire une nouvelle vie. Depuis, je raconte tout sur ma chaîne YouTube : du premier jour en Italie aux meilleures pizzas de la ville et aux plages à l'eau turquoise.",
     about_p2:
-      "Sur \"Clau Vlog\", vous trouverez des vlogs quotidiens sur la vie d'un Roumain en Italie, la cuisine, les voyages et les rencontres intéressantes. Si vous aimez ce que vous voyez, mettez un like, commentez et abonnez-vous — chaque abonné compte énormément pour moi !",
+      "Sur \"ClauDiretta\", vous trouverez des vlogs quotidiens sur la vie d'un Roumain en Italie, la cuisine, les voyages et les rencontres intéressantes. Si vous aimez ce que vous voyez, mettez un like, commentez et abonnez-vous — chaque abonné compte énormément pour moi !",
     fact_1: "🇷🇴 De Roumanie",
     fact_2: "🍕 Amoureux de pizza",
     fact_3: "🎥 Vlogs quotidiens",
@@ -177,7 +177,7 @@ const TRANSLATIONS = {
     about_p1:
       "Ich bin aus Rumänien nach Palermo auf Sizilien gezogen, um mir ein neues Leben aufzubauen. Seitdem erzähle ich alles auf meinem YouTube-Kanal: vom ersten Tag in Italien bis zu den besten Pizzen der Stadt und den Stränden mit türkisblauem Wasser.",
     about_p2:
-      "Auf \"Clau Vlog\" findest du tägliche Vlogs über das Leben eines Rumänen in Italien, Kochen, Reisen und interessante Begegnungen. Wenn dir gefällt, was du siehst, like, kommentiere und abonniere — jeder Abonnent bedeutet mir enorm viel!",
+      "Auf \"ClauDiretta\" findest du tägliche Vlogs über das Leben eines Rumänen in Italien, Kochen, Reisen und interessante Begegnungen. Wenn dir gefällt, was du siehst, like, kommentiere und abonniere — jeder Abonnent bedeutet mir enorm viel!",
     fact_1: "🇷🇴 Aus Rumänien",
     fact_2: "🍕 Pizza-Liebhaber",
     fact_3: "🎥 Tägliche Vlogs",
