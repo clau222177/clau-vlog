@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clau Vlog - Vloguri din Palermo, Italia. Viața unui român în Sicilia." />
+  <title>Clau Vlog | Palermo, Italia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-dot"></span>
+        Clau&nbsp;Vlog
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-i18n="nav_home">Acasă</a></li>
+        <li><a href="#vlogs" data-i18n="nav_vlogs">Vloguri</a></li>
+        <li><a href="#about" data-i18n="nav_about">Despre mine</a></li>
+        <li><a href="#follow" data-i18n="nav_follow">Urmărește-mă</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Language switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn" aria-label="Change language">
+            <i class="fa-solid fa-globe"></i>
+            <span id="langLabel">RO</span>
+            <i class="fa-solid fa-chevron-down lang-chevron"></i>
+          </button>
+          <ul class="lang-menu" id="langMenu">
+            <li><button data-lang="ro" class="active">Română</button></li>
+            <li><button data-lang="en">English</button></li>
+            <li><button data-lang="fr">Français</button></li>
+            <li><button data-lang="de">Deutsch</button></li>
+          </ul>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-badge" data-i18n="hero_badge">🎥 Vlogger în Palermo 🇮🇹</span>
+      <h1 class="hero-title">
+        <span data-i18n="hero_title_1">Bine ai venit pe</span><br />
+        <span class="gradient-text" data-i18n="hero_title_2">canalul meu!</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">
+        Sunt Clau, un băiat român stabilit în Palermo, Italia. Urmărește-mă în aventurile mele
+        prin Sicilia: mâncare, locuri, oameni și viața de zi cu zi a unui român în Italia.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-youtube" href="https://www.youtube.com/@ClauVlog" target="_blank" rel="noopener">
+          <i class="fa-brands fa-youtube"></i>
+          <span data-i18n="hero_subscribe">Abonează-te</span>
+        </a>
+        <a class="btn btn-ghost" href="#vlogs">
+          <i class="fa-solid fa-play"></i>
+          <span data-i18n="hero_watch">Vezi vlogurile</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong data-count="0" data-target="1000">1.000+</strong>
+          <span data-i18n="stat_subs">Abonați</span>
+        </div>
+        <div class="stat">
+          <strong data-count="0" data-target="50000">50.000+</strong>
+          <span data-i18n="stat_views">Vizualizări</span>
+        </div>
+        <div class="stat">
+          <strong data-count="0" data-target="120">120+</strong>
+          <span data-i18n="stat_videos">Videoclipuri</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#vlogs" class="scroll-hint" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- Vlogs -->
+  <section class="section" id="vlogs">
+    <div class="section-head">
+      <h2 class="section-title"><span class="gradient-text" data-i18n="vlogs_title">Ultimele Vloguri</span></h2>
+      <p class="section-sub" data-i18n="vlogs_sub">Cele mai recente aventuri de pe canal</p>
+    </div>
+
+    <div class="vlogs-grid">
+
+      <!-- ⬇️ Înlocuiește VIDEO_ID cu ID-ul real al videoclipurilor tale -->
+      <article class="vlog-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1"
+                  title="Clau Vlog video 1" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="vlog-info">
+          <h3 data-i18n="vlog_1_title">O zi în Palermo 🌞</h3>
+          <p class="vlog-meta">Palermo • <span data-i18n="vlog_date_1">1 iulie</span></p>
+        </div>
+      </article>
+
+      <article class="vlog-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2"
+                  title="Clau Vlog video 2" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="vlog-info">
+          <h3 data-i18n="vlog_2_title">Cea mai bună pizza 🍕</h3>
+          <p class="vlog-meta">Palermo • <span data-i18n="vlog_date_2">24 iunie</span></p>
+        </div>
+      </article>
+
+      <article class="vlog-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_3"
+                  title="Clau Vlog video 3" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="vlog-info">
+          <h3 data-i18n="vlog_3_title">Piața Ballarò 🛒</h3>
+          <p class="vlog-meta">Palermo • <span data-i18n="vlog_date_3">17 iunie</span></p>
+        </div>
+      </article>
+
+      <article class="vlog-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_4"
+                  title="Clau Vlog video 4" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="vlog-info">
+          <h3 data-i18n="vlog_4_title">Plaja Mondello 🏖️</h3>
+          <p class="vlog-meta">Palermo • <span data-i18n="vlog_date_4">10 iunie</span></p>
+        </div>
+      </article>
+
+      <article class="vlog-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_5"
+                  title="Clau Vlog video 5" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="vlog-info">
+          <h3 data-i18n="vlog_5_title">Viața de român în Italia 🇮🇹</h3>
+          <p class="vlog-meta">Palermo • <span data-i18n="vlog_date_5">3 iunie</span></p>
+        </div>
+      </article>
+
+      <article class="vlog-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_6"
+                  title="Clau Vlog video 6" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+        <div class="vlog-info">
+          <h3 data-i18n="vlog_6_title">Street food sicilian 🍢</h3>
+          <p class="vlog-meta">Palermo • <span data-i18n="vlog_date_6">27 mai</span></p>
+        </div>
+      </article>
+      <!-- ⬆️ Înlocuiește VIDEO_ID_1..6 cu ID-urile tale reale -->
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="about-grid">
+      <div class="about-photo">
+        <div class="photo-frame">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop"
+               alt="Clau Vlog" loading="lazy" />
+        </div>
+        <div class="photo-tag">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Palermo, Sicilia 🇮🇹</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-label" data-i18n="about_label">Despre mine</span>
+        <h2 class="section-title" data-i18n="about_title">Salut, eu sunt <span class="gradient-text">Clau!</span></h2>
+        <p class="about-p" data-i18n="about_p1">
+          M-am mutat din România în Palermo, Sicilia, pentru a-mi construi o viață nouă. De atunci,
+          povestesc totul pe canalul meu de YouTube: de la prima zi în Italia, la cele mai bune
+          pizza din oraș și plajele cu apă turcoaz.
+        </p>
+        <p class="about-p" data-i18n="about_p2">
+          Pe „Clau Vlog" vei găsi vloguri zilnice despre viața unui român în Italia, gătit,
+          travel și întâlniri cu oameni interesanți. Dacă îți place ce vezi, dă un like, comentează
+          și abonează-te — fiecare abonat contează enorm pentru mine!
+        </p>
+        <div class="about-facts">
+          <div class="fact">
+            <i class="fa-solid fa-house-chimney"></i>
+            <span data-i18n="fact_1">🇷🇴 Din România</span>
+          </div>
+          <div class="fact">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <span data-i18n="fact_2">🍕 Iubitor de pizza</span>
+          </div>
+          <div class="fact">
+            <i class="fa-solid fa-camera"></i>
+            <span data-i18n="fact_3">🎥 Vloguri zilnice</span>
+          </div>
+          <div class="fact">
+            <i class="fa-solid fa-earth-europe"></i>
+            <span data-i18n="fact_4">🌍 4 limbi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Follow -->
+  <section class="section follow" id="follow">
+    <div class="section-head">
+      <h2 class="section-title"><span class="gradient-text" data-i18n="follow_title">Urmărește-mă</span></h2>
+      <p class="section-sub" data-i18n="follow_sub">Fii parte din comunitate pe toate platformele</p>
+    </div>
+
+    <div class="social-grid">
+      <a class="social-card social-instagram" href="https://www.instagram.com/clauvlog" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i>
+        <span class="social-name">Instagram</span>
+        <span class="social-handle">@clauvlog</span>
+      </a>
+      <a class="social-card social-tiktok" href="https://www.tiktok.com/@clauvlog" target="_blank" rel="noopener">
+        <i class="fa-brands fa-tiktok"></i>
+        <span class="social-name">TikTok</span>
+        <span class="social-handle">@clauvlog</span>
+      </a>
+      <a class="social-card social-youtube" href="https://www.youtube.com/@ClauVlog" target="_blank" rel="noopener">
+        <i class="fa-brands fa-youtube"></i>
+        <span class="social-name">YouTube</span>
+        <span class="social-handle">@ClauVlog</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-dot"></span>
+        <strong>Clau Vlog</strong>
+      </div>
+      <p class="footer-tag" data-i18n="footer_tag">Din Palermo, cu drag. 🇮🇹❤️</p>
+      <p class="footer-copy">
+        © <span id="year">2026</span> Clau Vlog. <span data-i18n="footer_rights">Toate drepturile rezervate.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
