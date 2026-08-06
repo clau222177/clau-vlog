@@ -783,6 +783,36 @@ img {
   background: rgba(248, 113, 113, 0.08);
 }
 
+.cs-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.cs-counter-emoji {
+  display: inline-block;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.cs-counter-num {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--neon);
+  text-shadow: 0 0 14px rgba(168, 85, 247, 0.55);
+  animation: countPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes countPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
 @media (max-width: 820px) {
   .coming-soon {
     grid-template-columns: 1fr;

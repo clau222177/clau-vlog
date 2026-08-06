@@ -320,6 +320,53 @@ document.querySelectorAll("[data-count]").forEach((el) => counterObserver.observ
 /* ---------- Footer year ---------- */
 document.getElementById("year").textContent = new Date().getFullYear();
 
+/* ---------- Waitlist counter ---------- */
+const STORAGE_KEY = "clau-waitlist-count";
+const FAKE_START = 247;
+const csCounterNum = document.getElementById("csCounterNum");
+
+function getWaitlistCount() {
+  try {
+    return parseInt(localStorage.getItem(STORAGE_KEY), 10) || 0;
+  } catch (e) {
+    return 0;
+  }
+}
+
+function setWaitlistCount(n) {
+  try {
+    localStorage.setItem(STORAGE_KEY, String(n));
+  } catch (e) {
+    /* storage unavailable */
+  }
+}
+
+const totalWaitlist = FAKE_START + getWaitlistCount();
+
+const waitlistObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const target = totalWaitlist;
+      const duration = 1800;
+      const start = performance.now();
+
+      function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        csCounterNum.textContent = Math.round(target * eased).toLocaleString("ro-RO");
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+
+      requestAnimationFrame(tick);
+      waitlistObserver.unobserve(entry.target);
+    });
+  },
+  { threshold: 0.4 }
+);
+
+waitlistObserver.observe(csCounterNum);
+
 /* ---------- Notification permission ---------- */
 const notifyBtn = document.getElementById("notifyBtn");
 const notifyMsg = document.getElementById("notifyMsg");
@@ -330,6 +377,10 @@ function showNotifyMsg(text, type) {
 }
 
 notifyBtn.addEventListener("click", () => {
+  const newCount = getWaitlistCount() + 1;
+  setWaitlistCount(newCount);
+  csCounterNum.textContent = (FAKE_START + newCount).toLocaleString("ro-RO");
+
   if (!("Notification" in window)) {
     showNotifyMsg("Browserul tău nu suportă notificările.", "error");
     return;
