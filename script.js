@@ -320,6 +320,38 @@ document.querySelectorAll("[data-count]").forEach((el) => counterObserver.observ
 /* ---------- Footer year ---------- */
 document.getElementById("year").textContent = new Date().getFullYear();
 
+/* ---------- Live countdown ---------- */
+const LIVE_END = new Date("2026-08-07T20:30:00+02:00"); // 07-08-2026 20:30 Europe/Rome (CEST)
+
+const cdDays = document.getElementById("cdDays");
+const cdHours = document.getElementById("cdHours");
+const cdMins = document.getElementById("cdMins");
+const cdSecs = document.getElementById("cdSecs");
+const csCountdown = document.getElementById("csCountdown");
+const csLive = document.getElementById("csLive");
+
+function pad2(n) {
+  return String(n).padStart(2, "0");
+}
+
+function updateCountdown() {
+  const diff = LIVE_END - Date.now();
+
+  if (diff <= 0) {
+    csCountdown.hidden = true;
+    csLive.hidden = false;
+    return;
+  }
+
+  cdDays.textContent = pad2(Math.floor(diff / 86400000));
+  cdHours.textContent = pad2(Math.floor(diff / 3600000) % 24);
+  cdMins.textContent = pad2(Math.floor(diff / 60000) % 60);
+  cdSecs.textContent = pad2(Math.floor(diff / 1000) % 60);
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
 /* ---------- Waitlist counter ---------- */
 const STORAGE_KEY = "clau-waitlist-count";
 const FAKE_START = 247;
