@@ -34,6 +34,9 @@ const TRANSLATIONS = {
     vlog_date_4: "10 iunie",
     vlog_date_5: "3 iunie",
     vlog_date_6: "27 mai",
+    vlog_live_title: "LIVE la Scala dei Turchi la 20:30 - Apus de vis in Sicilia",
+    vlog_live_date: "07.08.2026",
+    vlog_live_desc: "Ieri 20:30 LIVE de pe Scala dei Turchi - replay disponibil",
     about_label: "Despre mine",
     about_title: "Salut, eu sunt Clau!",
     about_p1:
@@ -80,6 +83,9 @@ const TRANSLATIONS = {
     vlog_date_4: "June 10",
     vlog_date_5: "June 3",
     vlog_date_6: "May 27",
+    vlog_live_title: "LIVE at Scala dei Turchi at 20:30 - Dream sunset in Sicily",
+    vlog_live_date: "07.08.2026",
+    vlog_live_desc: "Yesterday 20:30 LIVE from Scala dei Turchi - replay available",
     about_label: "About me",
     about_title: "Hi, I'm Clau!",
     about_p1:
@@ -126,6 +132,9 @@ const TRANSLATIONS = {
     vlog_date_4: "10 juin",
     vlog_date_5: "3 juin",
     vlog_date_6: "27 mai",
+    vlog_live_title: "LIVE à Scala dei Turchi à 20h30 - Coucher de soleil de rêve en Sicile",
+    vlog_live_date: "07.08.2026",
+    vlog_live_desc: "Hier 20h30 LIVE depuis Scala dei Turchi - replay disponible",
     about_label: "À propos",
     about_title: "Salut, c'est Clau !",
     about_p1:
@@ -172,6 +181,9 @@ const TRANSLATIONS = {
     vlog_date_4: "10. Juni",
     vlog_date_5: "3. Juni",
     vlog_date_6: "27. Mai",
+    vlog_live_title: "LIVE auf der Scala dei Turchi um 20:30 - Traumhafter Sonnenuntergang in Sizilien",
+    vlog_live_date: "07.08.2026",
+    vlog_live_desc: "Gestern 20:30 LIVE von der Scala dei Turchi - Replay verfügbar",
     about_label: "Über mich",
     about_title: "Hallo, ich bin Clau!",
     about_p1:

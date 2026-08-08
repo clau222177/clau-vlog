@@ -538,6 +538,52 @@ img {
   border: 0;
 }
 
+.video-wrap a {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.video-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.vlog-card:hover .video-wrap img {
+  transform: scale(1.05);
+}
+
+.vlog-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--red);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 22px rgba(255, 0, 51, 0.5);
+}
+
+.vlog-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
 .vlog-info {
   padding: 18px 20px 22px;
 }
