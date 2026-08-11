@@ -1157,6 +1157,11 @@ img {
   box-shadow: var(--shadow);
 }
 
+.social-card:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
 .social-instagram {
   color: #e1306c;
   border-color: rgba(225, 48, 108, 0.35);
